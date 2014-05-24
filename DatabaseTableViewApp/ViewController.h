@@ -13,5 +13,6 @@
 
 @property (weak, nonatomic) IBOutlet UITableView *listTableView;
 
+-(IBAction)goToTest:(id)sender;
 
 @end

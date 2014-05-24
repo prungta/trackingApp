@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B3453C519313B0A00602DBE /* SeverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B3453C419313B0A00602DBE /* SeverViewController.m */; };
 		9BBE39881930835700B78715 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BBE39871930835700B78715 /* Foundation.framework */; };
 		9BBE398A1930835700B78715 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BBE39891930835700B78715 /* CoreGraphics.framework */; };
 		9BBE398C1930835700B78715 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BBE398B1930835700B78715 /* UIKit.framework */; };
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9B3453C319313B0A00602DBE /* SeverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeverViewController.h; sourceTree = "<group>"; };
+		9B3453C419313B0A00602DBE /* SeverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeverViewController.m; sourceTree = "<group>"; };
 		9BBE39841930835700B78715 /* DatabaseTableViewApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DatabaseTableViewApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BBE39871930835700B78715 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9BBE39891930835700B78715 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -128,6 +131,8 @@
 				9BBE39961930835700B78715 /* AppDelegate.h */,
 				9BBE39971930835700B78715 /* AppDelegate.m */,
 				9BBE39991930835700B78715 /* Main.storyboard */,
+				9B3453C319313B0A00602DBE /* SeverViewController.h */,
+				9B3453C419313B0A00602DBE /* SeverViewController.m */,
 				9BBE399C1930835700B78715 /* ViewController.h */,
 				9BBE399D1930835700B78715 /* ViewController.m */,
 				9BBE399F1930835700B78715 /* Images.xcassets */,
@@ -270,6 +275,7 @@
 			files = (
 				9BBE39BE1930849600B78715 /* HomeModel.m in Sources */,
 				9BBE39C1193084B000B78715 /* Location.m in Sources */,
+				9B3453C519313B0A00602DBE /* SeverViewController.m in Sources */,
 				9BBE399E1930835700B78715 /* ViewController.m in Sources */,
 				9BBE39981930835700B78715 /* AppDelegate.m in Sources */,
 				9BBE39941930835700B78715 /* main.m in Sources */,

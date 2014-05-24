@@ -48,7 +48,11 @@
     NSLog(@"test");
 }
 
-
+-(IBAction)goToTest:(id)sender {
+    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIViewController *vc = [mainStoryboard instantiateViewControllerWithIdentifier:@"testViewController"];
+    [self presentViewController:vc animated:YES completion:nil];
+}
 
 - (void)didReceiveMemoryWarning
 {
