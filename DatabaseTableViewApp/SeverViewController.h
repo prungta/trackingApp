@@ -11,6 +11,8 @@
 @interface SeverViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UITextField *usernameField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordField;
+@property (weak, nonatomic) IBOutlet UILabel *invalidLoginMsg;
 
 -(IBAction)login:(id)sender;
+
 @end

@@ -135,6 +135,13 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
+                                    <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Invalid Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gSh-OW-hPL">
+                                        <rect key="frame" x="88" y="4" width="148" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
@@ -145,6 +152,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="cbT-3t-vcV"/>
                     <connections>
+                        <outlet property="invalidLoginMsg" destination="gSh-OW-hPL" id="xWD-n6-pvz"/>
                         <outlet property="passwordField" destination="NBB-Rx-MH3" id="BVF-Rp-whK"/>
                         <outlet property="usernameField" destination="ppO-qZ-MvJ" id="Q5M-LP-FTs"/>
                     </connections>

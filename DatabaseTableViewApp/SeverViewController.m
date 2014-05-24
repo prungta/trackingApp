@@ -14,6 +14,8 @@
 
 @implementation SeverViewController
 
+int invalidTrys = 0;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -47,7 +49,38 @@
 */
 
 -(IBAction)login:(id)sender{
+    if([_usernameField.text isEqualToString:@""])
+       _invalidLoginMsg.hidden = false;
     
+    NSString *strURL = [NSString stringWithFormat:@"http://pranayrungta.com/login.php?userName=%@&password=%@",_usernameField.text, _passwordField.text];
+
+    NSData *dataURL = [NSData dataWithContentsOfURL:[NSURL URLWithString:strURL]];
+
+    NSString *strResult = [[NSString alloc] initWithData:dataURL encoding:NSUTF8StringEncoding];
+
+    
+    NSLog(strResult);
+    
+    if ([strResult isEqualToString:@"1"])
+    {
+        NSLog(@"Worked");
+        
+//        if(sqlite3_open()
+//        
+    }else
+    {
+//        // invalid information annoy popup
+//        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"alert" message:@"Invalide Information" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+//        [alert show];
+//        return;
+        
+        _invalidLoginMsg.hidden = false;
+        NSString *string = [NSString stringWithFormat:@"%d", invalidTrys];
+
+        _invalidLoginMsg.text = [@"Invalid Login " stringByAppendingString:(string)];
+        
+        invalidTrys++;
+    }
 }
 
 @end
