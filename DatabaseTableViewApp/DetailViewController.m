@@ -93,8 +93,8 @@ float latitude, longitude;
     float max = MAX(height, width);
     
     MKCoordinateSpan span;
-    span.latitudeDelta = max;
-    span.longitudeDelta = max;
+    span.latitudeDelta = max * 1.2;
+    span.longitudeDelta = max * 1.2;
     
     printf("%f %f\n", width, height);
     
