@@ -26,6 +26,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    NSLog(@"MAP LOADED");
 }
 
 - (void)didReceiveMemoryWarning

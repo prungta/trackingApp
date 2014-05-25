@@ -19,11 +19,8 @@
 
 - (void)downloadItems
 {
-    NSLog(@"downloadItems in HomeModel");
     // Download the json file
     NSURL *jsonFileUrl = [NSURL URLWithString:@"http://pranayrungta.com/service.php"];
-    
-    NSLog(@"got past service.php");
     
     // Create the request
     NSURLRequest *urlRequest = [[NSURLRequest alloc] initWithURL:jsonFileUrl];
@@ -75,13 +72,9 @@
         
     }
     
-    NSLog(@"post request");
-    
     // Ready to notify delegate that data is ready and pass back items
     if (self.delegate)
-    {
         [self.delegate itemsDownloaded:_locations];
-    }
 }
 
 @end

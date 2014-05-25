@@ -7,7 +7,7 @@
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mainController" id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -97,13 +97,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JKJ-68-fKz">
-                                <rect key="frame" x="11" y="117" width="298" height="172"/>
+                                <rect key="frame" x="11" y="63" width="298" height="172"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HsE-me-iEh">
-                                        <rect key="frame" x="131" y="131" width="37" height="30"/>
+                                        <rect key="frame" x="104" y="131" width="38" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Done">
+                                        <state key="normal" title="Login">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
@@ -142,6 +142,16 @@
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H6j-PZ-ogq">
+                                        <rect key="frame" x="163" y="131" width="57" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Register">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="registration:" destination="ZO5-Zj-9vw" eventType="touchUpInside" id="GoS-0W-kwM"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
@@ -159,12 +169,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oq9-fz-gbQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="642" y="776"/>
+            <point key="canvasLocation" x="642" y="686"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="yeA-4f-Sa8">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RKp-Ef-tl3" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="navController" automaticallyAdjustsScrollViewInsets="NO" id="RKp-Ef-tl3" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="9Zg-c0-wAa">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

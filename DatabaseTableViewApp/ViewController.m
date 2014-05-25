@@ -23,7 +23,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSLog(@"viewDidLoad");
+    NSLog(@"View Controller Loaded");
+    
     // Set this view controller object as the delegate and data source for the table view
     self.listTableView.delegate = self;
     self.listTableView.dataSource = self;
@@ -39,18 +40,17 @@
     
     // Call the download items method of the home model object
     [_homeModel downloadItems];
-    NSLog(@"downloadItems");    
+    
+    NSLog(@"View Controller - Items downloaded");
    
 }
 
-- (void)createAcc
-{
-    NSLog(@"test");
-}
-
 -(IBAction)goToTest:(id)sender {
+    NSLog(@"Going to register");
     UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+
     UIViewController *vc = [mainStoryboard instantiateViewControllerWithIdentifier:@"testViewController"];
+    
     [self presentViewController:vc animated:YES completion:nil];
 }
 
@@ -88,8 +88,6 @@
     // Get the location to be shown
     Location *item = _feedItems[indexPath.row];
     
-    NSLog(@"test");
-    
     // Get references to labels of cell
     myCell.textLabel.text = item.username;
     
@@ -110,6 +108,7 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+    NSLog(@" @@@@ PREPARE FOR SEGUE?");
     // Get reference to the destination view controller
     DetailViewController *detailVC = segue.destinationViewController;
     
