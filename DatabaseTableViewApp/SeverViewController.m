@@ -100,6 +100,12 @@ float longitude;
     if ([strResult isEqualToString:@"1"])
     {
         NSLog(@"Registration Worked");
+        
+        // Global var
+        GlobalData *globalData=[GlobalData getInstance];
+        globalData.username = _usernameField.text;
+
+        
         UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
         
         UIViewController *vc = [mainStoryboard instantiateViewControllerWithIdentifier:@"navController"];
