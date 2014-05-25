@@ -7,6 +7,7 @@
 //
 
 #import "SeverViewController.h"
+#import "GlobalData.h"
 
 @interface SeverViewController ()
 
@@ -131,10 +132,13 @@ float longitude;
         
         // Go Back
         UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-        
         UIViewController *vc = [mainStoryboard instantiateViewControllerWithIdentifier:@"navController"];
-        
         [self presentViewController:vc animated:YES completion:nil];
+        
+        // Save username
+        GlobalData* globalData =[GlobalData getInstance];
+        globalData.username = _usernameField.text;
+
     }else
     {
 //        // invalid information annoy popup

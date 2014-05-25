@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9B3453C519313B0A00602DBE /* SeverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B3453C419313B0A00602DBE /* SeverViewController.m */; };
+		9B43D09F193182E100D3B6E4 /* GlobalData.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B43D09E193182E100D3B6E4 /* GlobalData.m */; };
 		9B4DC0F61931541600508A2A /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4DC0F51931541600508A2A /* libsqlite3.dylib */; };
 		9B4DC0F81931650500508A2A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4DC0F71931650500508A2A /* CoreLocation.framework */; };
 		9BBE39881930835700B78715 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BBE39871930835700B78715 /* Foundation.framework */; };
@@ -43,6 +44,8 @@
 /* Begin PBXFileReference section */
 		9B3453C319313B0A00602DBE /* SeverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeverViewController.h; sourceTree = "<group>"; };
 		9B3453C419313B0A00602DBE /* SeverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeverViewController.m; sourceTree = "<group>"; };
+		9B43D09D193182E100D3B6E4 /* GlobalData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalData.h; sourceTree = "<group>"; };
+		9B43D09E193182E100D3B6E4 /* GlobalData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalData.m; sourceTree = "<group>"; };
 		9B4DC0F51931541600508A2A /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		9B4DC0F71931650500508A2A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		9BBE39841930835700B78715 /* DatabaseTableViewApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DatabaseTableViewApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,6 +146,8 @@
 				9B3453C419313B0A00602DBE /* SeverViewController.m */,
 				9BBE399C1930835700B78715 /* ViewController.h */,
 				9BBE399D1930835700B78715 /* ViewController.m */,
+				9B43D09D193182E100D3B6E4 /* GlobalData.h */,
+				9B43D09E193182E100D3B6E4 /* GlobalData.m */,
 				9BBE399F1930835700B78715 /* Images.xcassets */,
 				9BBE398E1930835700B78715 /* Supporting Files */,
 				9BBE39BC1930849600B78715 /* HomeModel.h */,
@@ -283,6 +288,7 @@
 			files = (
 				9BBE39BE1930849600B78715 /* HomeModel.m in Sources */,
 				9BBE39C1193084B000B78715 /* Location.m in Sources */,
+				9B43D09F193182E100D3B6E4 /* GlobalData.m in Sources */,
 				9B3453C519313B0A00602DBE /* SeverViewController.m in Sources */,
 				9BBE399E1930835700B78715 /* ViewController.m in Sources */,
 				9BBE39981930835700B78715 /* AppDelegate.m in Sources */,

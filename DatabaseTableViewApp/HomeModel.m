@@ -8,6 +8,7 @@
 
 #import "HomeModel.h"
 #import "Location.h"
+#import "GlobalData.h"
 
 @interface HomeModel()
 {
@@ -18,7 +19,7 @@
 @implementation HomeModel
 
 - (void)downloadItems
-{
+{   
     // Download the json file
     NSURL *jsonFileUrl = [NSURL URLWithString:@"http://pranayrungta.com/service.php"];
     
@@ -60,15 +61,19 @@
     {
         NSDictionary *jsonElement = jsonArray[i];
         
-        // Create a new location object and set its props to JsonElement properties
-        Location *newLocation = [[Location alloc] init];
-        newLocation.username = jsonElement[@"Username"];
-        newLocation.password = jsonElement[@"Password"];
-        newLocation.latitude = jsonElement[@"Latitude"];
-        newLocation.longitude = jsonElement[@"Longitude"];
+        GlobalData *obj=[GlobalData getInstance];
+        if(!([[jsonElement[@"Username"] lowercaseString] isEqualToString:[obj.username lowercaseString]]))
+        {
+            // Create a new location object and set its props to JsonElement properties
+            Location *newLocation = [[Location alloc] init];
+            newLocation.username = jsonElement[@"Username"];
+            newLocation.password = jsonElement[@"Password"];
+            newLocation.latitude = jsonElement[@"Latitude"];
+            newLocation.longitude = jsonElement[@"Longitude"];
         
-        // Add this question to the locations array
-        [_locations addObject:newLocation];
+            // Add this question to the locations array
+            [_locations addObject:newLocation];
+        }
         
     }
     

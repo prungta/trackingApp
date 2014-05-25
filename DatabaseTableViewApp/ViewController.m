@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "Location.h"
 #import "DetailViewController.h"
+#import "GlobalData.h"
 
 @interface ViewController ()
 {
@@ -24,6 +25,20 @@
 {
     [super viewDidLoad];
     NSLog(@"View Controller Loaded");
+    
+    // See if user is logged in
+    GlobalData *obj=[GlobalData getInstance];
+    
+    if(obj.username == nil)
+    {
+        NSLog(@"USER NOT LOGGED IN");
+        // Go to login
+        UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        
+        UIViewController *vc = [mainStoryboard instantiateViewControllerWithIdentifier:@"testViewController"];
+        
+        [self presentViewController:vc animated:YES completion:nil];
+    }
     
     // Set this view controller object as the delegate and data source for the table view
     self.listTableView.delegate = self;
